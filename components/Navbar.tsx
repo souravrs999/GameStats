@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 const NavbarComponent: React.FC = () => {
@@ -29,7 +30,12 @@ const NavbarComponent: React.FC = () => {
                 </button>
 
                 <a href="index.html" className="header__logo">
-                  <img src="img/logo.svg" alt="" />
+                  <Image
+                    src="/img/gamestats-logo-full.png"
+                    alt="Game Stats logo"
+                    height={35}
+                    width={100}
+                  />
                 </a>
 
                 <ul
@@ -282,8 +288,13 @@ const NavbarComponent: React.FC = () => {
                       id="dropdownMenuLang"
                       onClick={() => setLanCollapsed(!lanCollapsed)}
                     >
-                      <img src="img/flags/uk.svg" alt="" />
-                      <span>EN</span>
+                      <Image
+                        src="/img/flags/uk.svg"
+                        alt=""
+                        height={20}
+                        width={20}
+                      />
+                      <span> EN</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="512"
@@ -301,20 +312,35 @@ const NavbarComponent: React.FC = () => {
                     >
                       <li>
                         <a href="index.html#">
-                          <img src="img/flags/spain.svg" alt="" />
-                          <span>SP</span>
+                          <Image
+                            src="/img/flags/spain.svg"
+                            alt=""
+                            height={20}
+                            width={20}
+                          />
+                          <span> SP</span>
                         </a>
                       </li>
                       <li>
                         <a href="index.html#">
-                          <img src="img/flags/russia.svg" alt="" />
-                          <span>RU</span>
+                          <Image
+                            src="/img/flags/russia.svg"
+                            alt=""
+                            height={20}
+                            width={20}
+                          />
+                          <span> RU</span>
                         </a>
                       </li>
                       <li>
                         <a href="index.html#">
-                          <img src="img/flags/china.svg" alt="" />
-                          <span>CH</span>
+                          <Image
+                            src="/img/flags/china.svg"
+                            alt=""
+                            height={20}
+                            width={20}
+                          />
+                          <span> CH</span>
                         </a>
                       </li>
                     </ul>
